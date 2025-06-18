@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { Menu, X, Instagram, Facebook, Mail, Phone } from "lucide-react"
+import { Menu, X, Instagram, Facebook, Mail, Phone, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Component() {
@@ -77,9 +77,9 @@ export default function Component() {
                 </div>
               </div>
               <div className="flex-1 text-center md:text-left">
-                <div className="mb-4">
-                  <p className="text-sm text-gray-600 mb-2">森のイノベーションラボFUJINO</p>
-                  <p className="text-sm text-gray-600 mb-2">デジタル・ビジネス支援員</p>
+                <div className="mb-2">
+                  <p className="text-sm text-gray-600">森のイノベーションラボFUJINO</p>
+                  <p className="text-sm text-gray-600">デジタル・ビジネス支援員</p>
                 </div>
                 <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">中島 竜馬</h1>
                 <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
@@ -110,14 +110,19 @@ export default function Component() {
             <div className="bg-blue-100 rounded-3xl p-8 md:p-12">
               <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900 mb-8">デジタル・ビジネス支援</h3>
               <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                  <Image
-                    src="/images/digital-support-1.png"
-                    alt="デジタルビジネス支援の様子"
-                    width={300}
-                    height={200}
-                    className="w-full rounded-lg shadow-md"
-                  />
+                <div className="relative group">
+                  <a href="https://morilab-fujino.jp/report/digitalnandemo/" target="_blank" rel="noopener noreferrer" className="block">
+                    <Image
+                      src="/images/digital-support-1.png"
+                      alt="デジタルビジネス支援の様子"
+                      width={300}
+                      height={200}
+                      className="w-full rounded-lg shadow-md transition-all duration-300 group-hover:brightness-75 group-active:brightness-75 touch-manipulation"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 touch-manipulation">
+                      <ExternalLink className="w-8 h-8 text-white" />
+                    </div>
+                  </a>
                 </div>
                 <div>
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -126,14 +131,19 @@ export default function Component() {
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-8 items-center mt-8">
-                <div className="md:order-2">
-                  <Image
-                    src="/images/digital-support-2.jpeg"
-                    alt="ウェブサイト制作の様子"
-                    width={300}
-                    height={200}
-                    className="w-full rounded-lg shadow-md"
-                  />
+                <div className="md:order-2 relative group">
+                  <a href="https://morilab-fujino.jp/report/digitalnandemo/" target="_blank" rel="noopener noreferrer" className="block">
+                    <Image
+                      src="/images/digital-support-2.jpeg"
+                      alt="ウェブサイト制作の様子"
+                      width={300}
+                      height={200}
+                      className="w-full rounded-lg shadow-md transition-all duration-300 group-hover:brightness-75 group-active:brightness-75 touch-manipulation"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 touch-manipulation">
+                      <ExternalLink className="w-8 h-8 text-white" />
+                    </div>
+                  </a>
                 </div>
                 <div className="md:order-1">
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -158,14 +168,19 @@ export default function Component() {
             <div className="bg-orange-100 rounded-3xl p-8 md:p-12">
               <h3 className="text-xl md:text-2xl font-bold text-center text-gray-900 mb-8">たこ焼きの移動販売</h3>
               <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                  <Image
-                    src="/images/takoyaki-sales.jpeg"
-                    alt="たこ焼き移動販売の様子"
-                    width={300}
-                    height={200}
-                    className="w-full rounded-lg shadow-md"
-                  />
+                <div className="relative group">
+                  <a href="https://www.instagram.com/ryoma_nakajima" target="_blank" rel="noopener noreferrer" className="block">
+                    <Image
+                      src="/images/takoyaki-sales.jpeg"
+                      alt="たこ焼き移動販売の様子"
+                      width={300}
+                      height={200}
+                      className="w-full rounded-lg shadow-md transition-all duration-300 group-hover:brightness-75 group-active:brightness-75 touch-manipulation"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 touch-manipulation">
+                      <ExternalLink className="w-8 h-8 text-white" />
+                    </div>
+                  </a>
                 </div>
                 <div>
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -174,14 +189,19 @@ export default function Component() {
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-8 items-center mt-8">
-                <div className="md:order-2">
-                  <Image
-                    src="/images/takoyaki-truck.jpeg"
-                    alt="キッチンカーの様子"
-                    width={300}
-                    height={200}
-                    className="w-full rounded-lg shadow-md"
-                  />
+                <div className="md:order-2 relative group">
+                  <a href="https://www.instagram.com/ryoma_nakajima" target="_blank" rel="noopener noreferrer" className="block">
+                    <Image
+                      src="/images/takoyaki-truck.jpeg"
+                      alt="キッチンカーの様子"
+                      width={300}
+                      height={200}
+                      className="w-full rounded-lg shadow-md transition-all duration-300 group-hover:brightness-75 group-active:brightness-75 touch-manipulation"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 touch-manipulation">
+                      <ExternalLink className="w-8 h-8 text-white" />
+                    </div>
+                  </a>
                 </div>
                 <div className="md:order-1">
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -208,14 +228,19 @@ export default function Component() {
                 住み開きの家 よぴよぴハウス
               </h3>
               <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                  <Image
-                    src="/images/sharehouse-dining.jpeg"
-                    alt="よぴよぴハウスの様子"
-                    width={300}
-                    height={200}
-                    className="w-full rounded-lg shadow-md"
-                  />
+                <div className="relative group">
+                  <a href="http://ypyp-house.com/" target="_blank" rel="noopener noreferrer" className="block">
+                    <Image
+                      src="/images/sharehouse-dining.jpeg"
+                      alt="よぴよぴハウスの様子"
+                      width={300}
+                      height={200}
+                      className="w-full rounded-lg shadow-md transition-all duration-300 group-hover:brightness-75 group-active:brightness-75 touch-manipulation"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 touch-manipulation">
+                      <ExternalLink className="w-8 h-8 text-white" />
+                    </div>
+                  </a>
                 </div>
                 <div>
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -224,14 +249,19 @@ export default function Component() {
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-8 items-center mt-8">
-                <div className="md:order-2">
-                  <Image
-                    src="/images/sharehouse-diy.jpeg"
-                    alt="DIYイベントの様子"
-                    width={300}
-                    height={200}
-                    className="w-full rounded-lg shadow-md"
-                  />
+                <div className="md:order-2 relative group">
+                  <a href="http://ypyp-house.com/" target="_blank" rel="noopener noreferrer" className="block">
+                    <Image
+                      src="/images/sharehouse-diy.jpeg"
+                      alt="DIYイベントの様子"
+                      width={300}
+                      height={200}
+                      className="w-full rounded-lg shadow-md transition-all duration-300 group-hover:brightness-75 group-active:brightness-75 touch-manipulation"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 touch-manipulation">
+                      <ExternalLink className="w-8 h-8 text-white" />
+                    </div>
+                  </a>
                 </div>
                 <div className="md:order-1">
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -270,10 +300,10 @@ export default function Component() {
                   <div className="w-1/2 pr-8 text-right">
                     <div className="bg-purple-100 rounded-lg p-6 shadow-md">
                       <h3 className="font-bold text-gray-900 mb-2">2021年夏</h3>
-                      <p className="text-sm text-gray-700 mb-2">「点滴ヘルパー」</p>
+                      <p className="text-sm text-green-900">「点滴ヘルパー」</p>
                       <p className="text-sm text-gray-700 mb-2">アプリ リリース</p>
                       <p className="text-xs text-gray-600">
-                        父のコロナ感染時に重症化した時に看護師が点滴の滴下計算に困っていた話を受けて医療逼迫の解消を目的に開発。
+                        父がコロナ感染で重症化した時に看護師が点滴の滴下計算に困っていた話を受けて医療逼迫の解消を目的に開発。
                       </p>
                     </div>
                   </div>
@@ -288,7 +318,7 @@ export default function Component() {
                   <div className="w-1/2 pl-8">
                     <div className="bg-purple-100 rounded-lg p-6 shadow-md">
                       <h3 className="font-bold text-gray-900 mb-2">2025年現在</h3>
-                      <p className="text-sm text-gray-700 mb-2">「動物除けオブジェ」</p>
+                      <p className="text-sm text-green-900">「動物除けオブジェ」</p>
                       <p className="text-sm text-gray-700 mb-2">開発中</p>
                       <p className="text-xs text-gray-600">
                         中山間地域に特化した動物除けオブジェを開発中。人感センサーに反応すると音や光で威嚇する機能を搭載
