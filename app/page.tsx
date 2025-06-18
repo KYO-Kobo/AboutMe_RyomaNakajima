@@ -2,16 +2,16 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { Menu, X, Instagram, Facebook, Mail } from "lucide-react"
+import { Menu, X, Instagram, Facebook, Mail, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Component() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="relative bg-gray-200/50 backdrop-blur-sm">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-gray-200/90 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="text-lg font-medium text-gray-600">Ryoma Nakajima</div>
@@ -61,9 +61,9 @@ export default function Component() {
       </header>
 
       {/* Hero Section */}
-      <section id="about" className="py-16 bg-gradient-to-br from-blue-100 to-purple-100">
+      <section id="about" className="min-h-screen flex items-center py-16 bg-gradient-to-br from-blue-100 to-purple-100">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12">
+          <div className="max-w-4xl mx-auto backdrop-blur-sm rounded-3xl p-8 md:p-12">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-shrink-0">
                 <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
@@ -141,6 +141,15 @@ export default function Component() {
                   </p>
                 </div>
               </div>
+              <div className="text-right">
+                <div className="text-right mt-20">
+                  <div className="text-center mt-20">
+                    <a href="https://morilab-fujino.jp/" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-300">
+                      森ラボについて →
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -178,6 +187,15 @@ export default function Component() {
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                     キッチンカーをDIYで作って保健所に通してみたり、売上の検証も行ってビジネス面での支援もしています。キッチンカービジネスに興味のある方はお気軽に声をかけてください。
                   </p>
+                </div>
+              </div>
+              <div className="text-right">
+                <div className="text-right mt-20">
+                  <div className="text-center mt-20">
+                    <a href="https://www.instagram.com/ryoma_nakajima" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-300">
+                      出店情報はインスタグラムにて →
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -219,6 +237,15 @@ export default function Component() {
                   <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                     誰でも参加できてDIYなどを学べるイベントを月一で実施しています。モノ作りや農的生活を通して、「自立共生」という生き方の社会実験を行っています。
                   </p>
+                </div>
+              </div>
+              <div className="text-right">
+                <div className="text-right mt-20">
+                  <div className="text-center mt-20">
+                    <a href="https://www.instagram.com/ypyp_house" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors duration-300">
+                      イベント情報はインスタグラムにて →
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -276,18 +303,26 @@ export default function Component() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 bg-gradient-to-r from-blue-400 to-purple-500">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">お問い合わせ</h2>
-          <div className="max-w-md mx-auto">
-            <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8">
-              <Mail className="w-16 h-16 text-white mx-auto mb-4" />
-              <a
-                href="mailto:ryoma@morilab-fujino.jp"
-                className="text-white text-lg hover:text-gray-200 transition-colors"
-              >
-                ryoma@morilab-fujino.jp
-              </a>
+      <section id="contact" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">お問い合わせ</h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-lg shadow-lg p-8 text-center">
+                <Mail className="w-12 h-12 text-gray-400 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-4">メール</h3>
+                <a href="mailto:ryoma@morilab-fujino.jp" className="text-blue-600 hover:text-blue-800">
+                  ryoma@morilab-fujino.jp
+                </a>
+              </div>
+              <div className="bg-white rounded-lg shadow-lg p-8 text-center">
+                <Phone className="w-12 h-12 text-gray-400 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-4">電話</h3>
+                <a href="tel:080-3428-9790" className="text-blue-600 hover:text-blue-800">
+                  080-3428-9790
+                </a>
+                <p className="text-sm text-gray-500 mt-2">（協力隊共通）</p>
+              </div>
             </div>
           </div>
         </div>
