@@ -298,14 +298,14 @@ export default function Component() {
                 {/* 2021 Project */}
                 <div className="relative flex items-center">
                   <div className="w-1/2 pr-8 text-right">
-                    <div className="bg-purple-100 rounded-lg p-6 shadow-md">
+                    <a href="https://v0-drop-helper-app.vercel.app/" target="_blank" rel="noopener noreferrer" className="block bg-purple-100 rounded-lg p-6 shadow-md transition hover:shadow-lg hover:bg-purple-200 cursor-pointer">
                       <h3 className="font-bold text-gray-900 mb-2">2021年夏</h3>
                       <p className="text-sm text-green-900">「点滴ヘルパー」</p>
                       <p className="text-sm text-gray-700 mb-2">アプリ リリース</p>
                       <p className="text-xs text-gray-600">
                         父がコロナ感染で重症化した時に看護師が点滴の滴下計算に困っていた話を受けて医療逼迫の解消を目的に開発。
                       </p>
-                    </div>
+                    </a>
                   </div>
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-white"></div>
                   <div className="w-1/2 pl-8"></div>
