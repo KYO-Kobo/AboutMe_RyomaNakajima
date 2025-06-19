@@ -87,16 +87,14 @@ export default function Component() {
                   大阪生まれ、関東育ち。サレジオ工業高等専門学校機械電子工学科卒。株式会社ワコムにてシステムエンジニアとして補正業務を担当。2023年から地域おこし協力隊として相模原市に移住し、自分のスキルを活かしながら地域おこしの仕事に勤めている。
                 </p>
                 <div className="flex justify-center md:justify-start space-x-4">
-                  <a href="https://www.instagram.com/ryoma_nakajima" className="text-pink-500 hover:text-pink-600 transition-colors">
+                  <a href="https://www.instagram.com/ryoma_nakajima" className="ml-3 text-pink-500 hover:text-pink-600 transition-colors">
                     <Instagram className="w-6 h-6" />
                   </a>
-                  <a href="https://www.facebook.com/ryoma.nakajima.3" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-700 transition-colors">
+                  <a href="https://www.facebook.com/ryoma.nakajima.3" target="_blank" rel="noopener noreferrer" className="ml-3 text-gray-500 hover:text-blue-700 transition-colors">
                     <Facebook className="w-6 h-6" />
                   </a>
                   <a href="https://note.com/digital_yorozu" target="_blank" rel="noopener noreferrer" className="ml-3 text-gray-500 hover:text-green-500 transition-colors" aria-label="note">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-6 h-6" fill="currentColor">
-                      <path d="M29.952 6.016c-.032-.064-.064-.128-.128-.192-.064-.064-.128-.128-.192-.16-.064-.032-.128-.064-.192-.064H7.936c-.224 0-.416.192-.416.416v19.776c0 .224.192.416.416.416h16.064c.224 0 .416-.192.416-.416V9.408c0-.224-.192-.416-.416-.416H10.624c-.224 0-.416-.192-.416-.416s.192-.416.416-.416h13.376c.672 0 1.216.544 1.216 1.216v15.36c0 .672-.544 1.216-1.216 1.216H7.936c-.672 0-1.216-.544-1.216-1.216V6.176c0-.672.544-1.216 1.216-1.216h21.504c.224 0 .416-.192.416-.416 0-.064-.032-.128-.064-.192z"/>
-                    </svg>
+                    <img src="/images/icon_note.png" alt="note" className="w-6 h-6 object-contain" />
                   </a>
                 </div>
               </div>
@@ -372,6 +370,9 @@ export default function Component() {
             </a>
             <a href="https://www.facebook.com/ryoma.nakajima.3" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-700 transition-colors">
               <Facebook className="w-6 h-6" />
+            </a>
+            <a href="https://note.com/digital_yorozu" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-500 transition-colors" aria-label="note">
+              <img src="/images/icon_note.png" alt="note" className="w-6 h-6 object-contain" />
             </a>
           </div>
           <p className="text-gray-400 text-sm">© 2025 Ryoma N. All Rights Reserved.</p>
