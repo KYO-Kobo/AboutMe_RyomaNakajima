@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# サイトマップの場所
+Sitemap: https://aboutme-ryoma-nakajima.vercel.app/sitemap.xml
+
+# Googlebot用の設定
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# その他の検索エンジン
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# アセットファイル
+Allow: /images/
+Allow: /_next/static/

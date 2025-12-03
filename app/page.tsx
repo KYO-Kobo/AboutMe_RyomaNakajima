@@ -8,8 +8,50 @@ import { Button } from "@/components/ui/button"
 export default function Component() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "中島竜馬",
+    "jobTitle": "デジタル・ビジネス支援員",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "森のイノベーションラボFUJINO"
+    },
+    "url": "https://aboutme-ryoma-nakajima.vercel.app/",
+    "image": "https://aboutme-ryoma-nakajima.vercel.app/images/profile-new.png",
+    "description": "地域おこし協力隊として相模原市藤野でデジタル・ビジネス支援を行う",
+    "birthDate": "1998-05-22",
+    "birthPlace": "大阪府",
+    "nationality": "日本",
+    "email": "ryoma@morilab-fujino.jp",
+    "telephone": "080-3428-9790",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "相模原市緑区藤野",
+      "addressRegion": "神奈川県",
+      "addressCountry": "JP"
+    },
+    "sameAs": [
+      "https://www.instagram.com/ryoma_nakajima",
+      "https://www.facebook.com/ryoma.nakajima.3",
+      "https://note.com/digital_yorozu"
+    ],
+    "knowsAbout": [
+      "ウェブサイト制作",
+      "アプリ開発",
+      "デジタル支援",
+      "地域おこし",
+      "システムエンジニア"
+    ]
+  }
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-gray-200/90 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4">
@@ -81,10 +123,9 @@ export default function Component() {
                   <p className="text-sm text-gray-600">森のイノベーションラボFUJINO</p>
                   <p className="text-sm text-gray-600">デジタル・ビジネス支援員</p>
                 </div>
-                <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">中島 竜馬</h1>
+                <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">中島 竜馬（なかじま りょうま）</h1>
                 <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
-                  1998年5月22日
-                  大阪生まれ、関東育ち。サレジオ工業高等専門学校機械電子工学科卒。株式会社ワコムにてシステムエンジニアとして補正業務を担当。2023年から地域おこし協力隊として相模原市に移住し、自分のスキルを活かしながら地域おこしの仕事に勤めている。
+                  1998年5月22日生まれ、大阪府出身、関東育ち。サレジオ工業高等専門学校機械電子工学科卒業。株式会社ワコムにてシステムエンジニアとして補正業務を担当。2023年から地域おこし協力隊として神奈川県相模原市緑区藤野に移住し、デジタル・ビジネス支援員として活動。ウェブサイト制作、アプリ開発、地域DX推進、たこ焼き移動販売、シェアハウス運営など多方面で地域活性化に取り組んでいる。
                 </p>
                 <div className="flex justify-center md:justify-start space-x-4">
                   <a href="https://www.instagram.com/ryoma_nakajima" className="ml-3 text-pink-500 hover:text-pink-600 transition-colors">
@@ -106,7 +147,7 @@ export default function Component() {
       {/* Current Activities */}
       <section id="work" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">現在の活動</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">現在の活動 | 地域おこし協力隊として藤野で活躍</h2>
 
           {/* Digital Business Support */}
           <div className="max-w-4xl mx-auto mb-12">
@@ -289,7 +330,7 @@ export default function Component() {
       {/* Projects Timeline */}
       <section id="project" className="py-16 bg-green-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">プロジェクト</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">プロジェクト実績 | アプリ開発・システム開発の経歴</h2>
 
           <div className="max-w-4xl mx-auto">
             <div className="relative">
@@ -354,7 +395,7 @@ export default function Component() {
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">お問い合わせ</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">お問い合わせ | デジタル支援・ビジネス相談承ります</h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white rounded-lg shadow-lg p-8 text-center">
@@ -394,6 +435,7 @@ export default function Component() {
           <p className="text-gray-400 text-sm">© 2025 Ryoma N. All Rights Reserved.</p>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   )
 }
