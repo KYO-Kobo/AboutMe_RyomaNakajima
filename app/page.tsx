@@ -314,7 +314,23 @@ export default function Component() {
                   <div className="w-1/2 pl-8"></div>
                 </div>
 
-                {/* 2025 Project */}
+                {/* 2025 Project 1 */}
+                <div className="relative flex items-center">
+                  <div className="w-1/2 pr-8 text-right">
+                    <a href="https://hunter-test-lp-about.vercel.app/" target="_blank" rel="noopener noreferrer" className="block bg-purple-100 rounded-lg p-6 shadow-md transition hover:shadow-lg hover:bg-purple-200 cursor-pointer">
+                      <h3 className="font-bold text-gray-900 mb-2">2025年10月</h3>
+                      <p className="text-sm text-green-900">「狩猟免許例題集」</p>
+                      <p className="text-sm text-gray-700 mb-2">アプリ リリース</p>
+                      <p className="text-xs text-gray-600">
+                        狩猟免許取得を支援するiOS・Androidアプリ。500問以上の問題収録で模擬試験機能付き、すべての狩猟免許種別に対応。
+                      </p>
+                    </a>
+                  </div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-white"></div>
+                  <div className="w-1/2 pl-8"></div>
+                </div>
+
+                {/* 2025 Project 2 */}
                 <div className="relative flex items-center">
                   <div className="w-1/2 pr-8"></div>
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-white"></div>
